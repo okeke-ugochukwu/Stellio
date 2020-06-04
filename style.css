@@ -1,0 +1,204 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: rgb(218, 218, 218);
+}
+.container {
+    /*vertically centered using first four css properties*/
+    position: relative;
+    top: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+    margin: auto;
+    max-width: 350px;
+    height: 100%;
+    max-height: 700px;
+    min-height: 600px;
+    background: black;
+    overflow: hidden;
+    border-radius: 10px;   
+    box-shadow: 0px 0px 10px rgb(13, 13, 17) ; 
+}
+@media only screen and (max-width: 350px ) {
+    .container {
+        border-radius: 0;
+    }
+}
+.sideBar {
+    position: absolute;
+    width: 100%;
+    height: 100%;   
+    margin-left: -100%;
+    background: rgb(11, 10, 12);
+    transition: .5s;
+}
+.main {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    background: rgb(11, 10, 12);
+    position: absolute;
+    transition: .5s;
+}
+.main2 {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    background: rgb(11, 10, 12);
+    position: absolute;
+    transition: .5s;
+    margin-left: -100%;
+}
+.main3, .main4, .main5, .main6, .main7 {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    background: rgb(11, 10, 12);
+    position: absolute;
+    transition: .5s;
+    margin-left: -100%;
+}
+.openBtn {
+    padding: 0;
+    padding: 8px;
+    border: none;  
+    color: white;
+    background: none;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.openBtn:hover {
+    background-color: rgb(76, 63, 192);
+}
+.openBtn:focus {
+    background-color: rgb(76, 63, 192);
+}
+.closeBtn, .closeAlbumBtn {
+    float: right;
+    padding: 0;
+    padding: 8px;
+    border: none;  
+    color: white;
+    background: none;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+.closeBtn:hover, .closeAlbumBtn:hover {
+    color: rgb(76, 63, 192);
+}
+.closeBtn:focus {
+    color: rgb(76, 63, 192);
+}
+.albumCover {
+    width: 75%;
+    margin: auto;
+    height: 35%;
+    background: #111013;
+    border-radius: 10px;
+    outline: 1ps solid rgb(13, 13, 17);
+    box-shadow: 0px 3px 8px rgb(3, 3, 3);
+    margin-bottom: 20px;
+}
+.trackInfo {
+    margin-bottom: 20px;
+}
+.artiste {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+.title {
+    font-family: 'Jost', sans-serif;
+    color: rgb(76, 63, 192);
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+}
+.audio {
+    display: grid;
+    place-items: center;
+    margin: auto;
+}
+.player {
+ border-radius: 20px;
+}
+#menuBox {
+    width: 80%;
+    height: 100%;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+.menu ul li  {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 200;
+}
+.menu ul li:hover {
+    cursor: pointer;
+    background-color: rgb(76, 63, 192);
+}
+.active-tab {
+    background-color: rgb(76, 63, 192);
+}
+.closeListBtn {
+    float: right;
+    padding: 0;
+    padding: 8px;
+    border: none;  
+    color: white;
+    background: none;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+.closeListBtn:hover {
+    color: rgb(76, 63, 192);
+}
+.menuBox2, .menu3, .menu4{
+    width: 80%;
+    height: 100%;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+.menu2 ul li, .menu3 ul li, .menu4 ul li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 2px;
+    font-weight: 400;
+}
+.menu2  ul li:hover, .menu3 ul li:hover, .menu4 ul li:hover {
+    cursor: pointer;
+    background-color: rgb(76, 63, 192);
+}
+.activeTrack {
+    background-color: rgb(76, 63, 192);
+}
+#trackTitle, #trackTitle1, #trackTitle2, #trackTitle3,
+#trackTitle4, #trackTitle5, #trackTitle6, #trackTitle7 {
+    font-family: 'Jost', sans-serif;
+    font-weight: 100 ;
+}
+.footer {
+    margin-top: 150px;
+    box-shadow: 0px 0px 8px rgb(3, 3, 3);
+    place-content: baseline;
+    background-color: rgb(17, 16, 19);
+    border-radius: 20px;
+    height: 250px;
+    width: 100%;
+    text-align: center;
+    color: rgb(76, 63, 192);
+    font-family: 'Jost', sans-serif;
+    font-weight: 200;
+}

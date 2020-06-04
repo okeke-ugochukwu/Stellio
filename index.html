@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="description" content="Music Player">
+        <meta name="theme-color" content="#111013">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/749e694647.js" crossorigin="anonymous"></script>
+        <script src="fontawesome-free-5.13.0-web/js/solid.min.js"></script>
+        <script src="fontawesome-free-5.13.0-web/js/all.js"></script>
+        <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/solid.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="reset.css">
+    <title>Stelio UI</title>
+</head>
+    <body>
+
+        <div class="container">
+
+            <div class="sideBar" id="sideBar">
+                <button type="button" id="closeBtn" class="closeBtn" onclick="hideSideBar()">&times;</button>
+
+                <div class="menu">
+                    <ul id="menuBox">
+                        <li class="active-tab" onclick="hideSideBar()">Current</li>
+                        <li class="tab" onclick="showMain2()">All songs</li>
+                        <li class="tab" onclick="showMain3()">Albums</li>
+                        <li class="tab" onclick="showMain4()">Artistes</li>
+                        <li class="tab" onclick="showMain5()">Genres</li>
+                        <li class="tab" onclick="showMain6()">Playlists</li>
+                        <li class="tab" onclick="showMain7()">Folders</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="main" id="main">
+                <button onclick="openSideBar()" id="openBtn" class="openBtn">&#9776</button>
+                <div class="albumCover">
+                    
+                </div>
+
+                <div class="trackInfo">
+                    <div class="artiste" id="artiste">
+                        Lukas Graham
+                    </div>
+
+                    <div class="title" id="title">
+                        Better Than Yourself
+                    </div>
+                </div>
+            
+                <div class="audio">
+                    <audio  class="player" id="player" src="Lukas Graham - Better Than Yourself.mp3" type="audio/mp3" controls></audio>
+                    <div class="audioControls" >
+
+                    </div> 
+                </div>
+
+                <div class="footer">
+                    
+                </div>
+                
+            </div>
+
+            <div class="main2" id="main2">
+                <button type="button" id="closeListBtn" class="closeListBtn" onclick="hideMain2()">&times;</button>
+
+                <div class="menu2">
+                    <ul class="menuBox2" id="menuBox2">
+                        <li class="track" onclick="playTrack()">Lukas Graham <br /> <span  class="songTitle" id="trackTitle">Better than Yourself</span></li>
+                        <li class="track" onclick="playTrack1()">Lukas Graham <br /> <span  class="songTitle" id="trackTitle1">Dont You Worry Bout Me</span></li>
+                        <li class="track" onclick="playTrack2()">Lukas Graham <br /> <span  class="songTitle" id="trackTitle2">Drunk In The Morning</span></li>
+                        <li class="track" onclick="playTrack3()">Lukas Graham <br /> <span  class="songTitle" id="trackTitle3">Happy Home</span></li>
+                        <li class="track" onclick="playTrack4()">Lukas Graham <br /> <span  class="songTitle" id="trackTitle4">Take The World By Storm</span></li>
+                        <li class="track" onclick="playTrack5()">Lukas Graham <br /> <span  class="songTitle" id="trackTitle5">What Happened To Perfect</span></li>
+                        <li class="track" onclick="playTrack6()">Lukas Graham <br /> <span  class="songTitle" id="trackTitle6">You're Not There</span></li>
+                        <li class="track" onclick="playTrack7()">Lukas Graham <br /> <span  class="songTitle" id="trackTitle7">7 Years</span></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="main3" id="main3">
+                <button type="button" id="closeAlbumBtn" class="closeAlbumBtn" onclick="backtoSideBar()">&times;</button>
+
+                <div class="menu3">
+                    <ul>
+                    <li class="track" onclick="backtoMain2()">Lukas Graham <br /> <span  class="songTitle" id="trackTitle">Better than Yourself</span></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="main4" id="main4">
+                <button type="button" id="closeBtn" class="closeBtn" onclick="backtoSideBar2()">&times;</button>
+
+                <div class="menu4">
+                    <ul>
+                    <li class="track" onclick="backtoMaintwo()">Lukas Graham <br /></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="main5" id="main5">
+                <button type="button" id="closeBtn" class="closeBtn" onclick="backtoSideBar2i()">&times;</button>
+
+                <div class="menu4">
+                    <ul>
+                    <li class="track" onclick="backtoMaintwoi()">Nothing to see here yet :) <br /></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="main6" id="main6">
+                <button type="button" id="closeBtn" class="closeBtn" onclick="backtoSideBar2ii()">&times;</button>
+
+                <div class="menu4">
+                    <ul>
+                    <li class="track" onclick="backtoMaintwoii()">Recently Added <br /><span  class="songTitle" id="trackTitle"></span></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="main7" id="main7">
+                <button type="button" id="closeBtn" class="closeBtn" onclick="backtoSideBar2iii()">&times;</button>
+
+                <div class="menu4">
+                    <ul>
+                    <li class="track" onclick="backtoMaintwoiii()">Nothing to see here :)</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
